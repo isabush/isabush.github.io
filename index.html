@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Isabel Bush - Front End Web Developer</title>
+    <!-- stylesheet for icons -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- link to fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Annie+Use+Your+Telescope|Permanent+Marker"
+          rel="stylesheet">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles_main.css">
+<body>
+<div class="wrapper">
+    <!-- side navigation-->
+    <div id="mySideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+    <!-- navigation -->
+    <span onclick="openNav()" class="icon">
+        <img src="images/icon-01.png"/>
+        <span class="name">Isabel Bush</span>
+    </span>
+
+    <!-- home page -->
+    <div class="home" id="home">
+        <div class="homeBox">
+            <h1>Isabel Bush</h1>
+            <h3>Front End Web Developer</h3>
+        </div>
+    </div>
+    <!-- portfolio section -->
+    <div class="portfolio" id="portfolio">
+        <h1>My Work</h1>
+        <a href="http://pages.iu.edu/~isabush/homeworkEight/" target="_blank">
+            <img src="images/dannawayThumb.jpg"/>
+        </a>
+        <a href="http://pages.iu.edu/~isabush/homeworkSix/" target="_blank">
+            <img src="images/widgetThumb.jpg"/>
+        </a>
+        <a href="http://pages.iu.edu/~isabush/homeworkSeven/" target="_blank">
+            <img src="images/scrollingThumb.jpg">
+        </a>
+    </div>
+    <!-- about section -->
+    <div class="about" id="about">
+        <div class="me">
+            <h1>What She Believes</h1>
+            <p>"Creativity embeds knowledge so that it can become practice. We move what we’re learning from our heads
+                to our hearts through our hands. We are born makers, and creativity is the ultimate act of integration —
+                it is how we fold our experiences into our being…" - Brené Brown</p>
+        </div>
+    </div>
+    <div class="about">
+        <div id="box">
+            <div class="paragraphs one">
+                <div>
+                    <h2>What She Enjoys</h2>
+
+                    <ul>
+                        <li>>> Cuddling with large, fuzzy blankets</li>
+                        <li>>> Hot Cocoa</li>
+                        <li>>> Spending time with friends and family</li>
+                        <li>>> Carbs</li>
+                        <li>>> Yelling at computers</li>
+                        <li>>> Crying over historical fiction</li>
+                        <li>>> Thinking games and puzzles</li>
+                        <li>>> Meditating</li>
+                        <li>>> Coffee that is too sweet</li>
+                        <li>>> Appreciating beauty</li>
+                        <li>>> Being warm when it's cold</li>
+                        <li>>> Looking at nature</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="paragraphs two">
+                <div>
+                    <h2>What She Does</h2>
+                    <ul>
+                        <li>>> Front End Web Development</li>
+                        <li>>> Develops in:
+                            <ul>
+                                <li>>>> HTML</li>
+                                <li>>>> CSS</li>
+                                <li>>>> JavaScript</li>
+                                <li>>>> Ionic 3 & 4</li>
+                                <li>>>> JSON</li>
+                                <li>>>> PHP</li>
+                                <li>>>> Angular JS</li>
+                                <li>>>> JQuery</li>
+                            </ul>
+                        </li>
+                        <li>>> Experiments With:
+                            <ul>
+                                <li>>>> UX/UI Design</li>
+                                <li>>>> Backend</li>
+                                <li>>>> Thinking outside the box</li>
+                                <li>>>> Creative solutions</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paragraphs three">
+                <div>
+                    <h2>Who She Credits</h2>
+                    <ul>
+                        <li>>> Her Parents
+                            <ul>
+                                <li>>>> Who believe in her</li>
+                            </ul>
+                        </li>
+                        <li>>> Her Fiancé
+                            <ul>
+                                <li>>>> Who supports her</li>
+                            </ul>
+                        </li>
+                        <li>>> Her Cat
+                            <ul>
+                                <li>>>> Who sits on her computer</li>
+                            </ul>
+                        </li>
+                        <li>>> Her Friends
+                            <ul>
+                                <li>>>> Who will always be there for her</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section -->
+    <div class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <form id="container" action="https://formspree.io/isabelmbush@gmail.com" method="post" name="contactForm">
+            <div>
+                Name: <input type="text" name="name" placeholder="Your Name">
+            </div>
+            <div>
+                Email: <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <div>
+                Reason for contacting:
+                <select>
+                    <option value="question">I've got a question</option>
+                    <option value="project">I've got a project</option>
+                    <option value="hello">I wanted to say hello</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="comment">
+                Comment: <textarea name="comment" placeholder="What I can do for you"></textarea>
+            </div>
+            <input type="submit" name="submit" value="Send">
+        </form>
+
+
+    </div>
+    <!-- footer section -->
+    <footer>
+        <a href="https://www.linkedin.com/in/isabel-bush-542952135" target="_blank"><i
+                class="fa fa-linkedin-square fa-3x"
+                aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/isabel.bush.33" target="_blank"><i
+                class="fa fa-facebook-square fa-3x"
+                aria-hidden="true"></i></a>
+        <a href="#contact"><i
+                class="fa fa-envelope fa-3x"
+                aria-hidden="true"></i></a>
+        <p>Isabel Bush 2017</p>
+        <p>Indianapolis, Indiana</p>
+    </footer>
+
+    <!-- link to javascript file -->
+    <script src="js/app.js"></script>
+</div>
+</body>
+</html>

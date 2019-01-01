@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Permanent Marker', cursive; */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    transition: background-color .5s;
+}
+
+.wrapper {
+    height: 100%;
+    transition: margin-left .5s;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sideNav a:hover {
+    color: #999999;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {
+        padding-top: 15px;
+    }
+
+    .sideNav a {
+        font-size: 18px;
+    }
+}
+
+.icon {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    z-index: 98;
+}
+
+.icon img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+    margin: 15px;
+}
+
+.home {
+    background-image: url(../images/laptop.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.homeBox {
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.homeBox h1 {
+    font-size: 40px;
+}
+
+.homeBox h3 {
+    font-size: 20px;
+}
+
+.portfolio {
+    max-height: 2000px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 25px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.portfolio h1 {
+    margin-top: 50px;
+}
+
+.portfolio a {
+    margin: 30px;
+}
+
+.portfolio img {
+    max-width: 100%;
+    max-height: 500px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.portfolio img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #7c7c7c;
+}
+
+.about {
+    background-image: url(../images/isabel.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+    box-sizing: border-box;
+}
+
+.about p {
+    padding: 0px 150px;
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 60%;
+}
+
+.me {
+    background-image: url(../images/isabel.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+}
+
+#box {
+    max-height: 80%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.paragraphs {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    color: black;
+    flex-direction: row;
+}
+
+.paragraphs h2 {
+    font-size: 27px;
+}
+
+.paragraphs ul {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.paragraphs p {
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+.one {
+    height: 60%;
+    width: 35%;
+}
+
+.two {
+    height: 60%;
+    width: 30%;
+}
+
+.three {
+    height: 60%;
+    width: 25%;
+}
+
+.contact {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 0px auto;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 70%;
+    max-width: 600px;
+}
+
+.contact h1 {
+    margin: 50px auto;
+}
+
+.contact div {
+    padding-bottom: 4%;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.contact input {
+    height: 25px;
+    min-width: 90%;
+
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact textarea {
+    height: 125px;
+    max-width: 100%;
+    width: 100%;
+    min-width: 600px;
+    min-height: 100px;
+}
+
+input[type=submit] {
+    margin: 5px auto;
+    color: black;
+    padding: 0px 25px 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    vertical-align: middle;
+    max-width: 110px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    display: block;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.45);
+    margin: 0px auto;
+    text-align: center;
+    padding: 50px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #000;
+    padding: 10px;
+}
+
+footer a:hover {
+    color: #dddddd;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: larger;
+}
+
+
+
+
+
